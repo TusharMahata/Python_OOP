@@ -11,6 +11,7 @@ class Item():
 
 item1 = Item('phone', 200, 5)
 item2 = Item('laptop', 500, 3)
+# commenting out
 
 print(item1.calculate_total_price())
 print(item2.calculate_total_price())
