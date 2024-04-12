@@ -14,6 +14,7 @@ class Course:
         self.students = []
         
     def add_student(self, student):
+        # here every student is a class. 
         if len(self.students)<self.max_students:
             self.students.append(student)
             return True
@@ -29,7 +30,7 @@ stu_two = Student('Shawon', 26, 22)
 stu_three = Student('Tushar', 27, 21)
 
 course = Course('Math', 2)
-course.add_student(stu_one)
+course.add_student(stu_one) # an intence Student class is passed in Course class. 
 course.add_student(stu_two)
 course.add_student(stu_three) # Not able to take input
 
